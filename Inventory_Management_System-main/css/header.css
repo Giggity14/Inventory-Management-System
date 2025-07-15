@@ -1,0 +1,140 @@
+.header {
+  background-color: #ffffff;
+  height: 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 210px;
+  right: 0;
+  z-index: 200;
+}
+.left-section {
+  width: 500px;
+  height: 32px;
+  padding: 10px;
+  margin: 10px 25px;
+  background-color: #ffffff;
+  border: #ababab 1px solid;
+  border-radius: 30px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  align-items: center;
+}
+.left-section i {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+.left-section input {
+  flex: 1;
+
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 8px;
+  background-color: transparent;
+}
+.left-section input::placeholder {
+  color: #9b9b9b;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 260px;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+
+.refresh-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: white;
+  width: 80px;
+  height: 30px;
+  padding: 0 6px;
+  border: #4c4c4c 1px solid;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.refresh-button-container:hover {
+  background-color: #fafafa;
+  transform: scale(1.02);
+}
+
+.refresh-button-container i {
+  font-size: 12px;
+  color: #4c4c4c;
+}
+
+.refresh-button-container button {
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #4c4c4c;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.notifications-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+.notifications-icon-container i {
+  font-size: 20px;
+  color: #4c4c4c;
+}
+.notifications-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.notifications-icon-container::after {
+  content: attr(current-count);
+  position: absolute;
+  top: -4px;
+  right: -11px;
+
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  border-radius: 50%;
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  font-size: 8px;
+  margin-right: 4px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date-icon-container {
+  font-size: 20px;
+  color: #4c4c4c;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.date-icon-container:hover {
+  transform: scale(1.1);
+}
+.settings-icon-container span {
+  font-size: 24px;
+  padding-top: 5px;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+.settings-icon-container span:hover {
+  transform: scale(1.1);
+}
